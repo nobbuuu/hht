@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="wheelview_margin">34dp</dimen>
+    <dimen name="wheelview_item_height">44dp</dimen>
+    <dimen name="dimen_64">64dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+
+
+    <!--<dimen name="wheelview_item_offset">42px</dimen>-->
+    <!--<dimen name="wheelview_item_textsize">53px</dimen>-->
+     <dimen name="wheelview_item_offset">15dp</dimen>
+    <dimen name="wheelview_item_textsize">17sp</dimen>
+
+</resources>

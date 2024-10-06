@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_40"
+    android:layout_marginLeft="@dimen/dimen_80"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/one_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/layout_one_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_lv11x"
+            />
+
+        <ImageView
+            android:id="@+id/titleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_one_item_img"
+            android:src="@mipmap/ic_level_text1x"/>
+    </RelativeLayout>
+
+
+
+
+
+
+    <View
+        android:id="@+id/nullView"
+        android:layout_toRightOf="@+id/one_Layout"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_1"
+        android:visibility="gone"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="@dimen/dimen_15"-->
+<!--            android:layout_marginRight="@dimen/dimen_15"-->
+<!--            android:text="2-3岁"-->
+<!--            android:paddingTop="@dimen/dimen_3"-->
+<!--            android:paddingBottom="@dimen/dimen_3"-->
+<!--            android:paddingLeft="@dimen/dimen_13"-->
+<!--            android:paddingRight="@dimen/dimen_13"-->
+<!--            android:gravity="center"-->
+<!--            android:background="@drawable/sui"-->
+<!--            android:textColor="@color/black"-->
+<!--            />-->
+
+
+</RelativeLayout>

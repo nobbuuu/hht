@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/rivBookCoverImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pic_book" />
+
+    <FrameLayout
+        android:id="@+id/flMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen_3"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:layout_marginRight="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/ivMask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_book_half"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvGrade"
+                style="@style/BookItemTextStyle"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                tools:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                style="@style/BookItemTextStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:layout_marginBottom="@dimen/dimen_4"
+                android:textSize="@dimen/size_12"
+                tools:text="@string/app_name" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/flDownload"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_gravity="right"
+            android:background="@drawable/shape_book_download_bg"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_download" />
+        </FrameLayout>
+        <!--<ImageButton-->
+        <!--android:id="@+id/ivDownload"-->
+        <!--android:layout_width="@dimen/dimen_45"-->
+        <!--android:layout_height="@dimen/dimen_45"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:src="@drawable/icon_download"-->
+
+        <!--android:visibility="visible"/>-->
+        <CheckBox
+            android:id="@+id/cbCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginRight="@dimen/dimen_12"
+            android:button="@drawable/selector_book_check"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!--</FrameLayout>-->
+
+
+</FrameLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_118"
+    app:background_normal="@color/color_d9"
+    app:border_color_normal="@color/white"
+    app:border_width_normal="@dimen/dimen_4"
+    app:corner_radius="@dimen/dimen_10">
+
+    <com.ruffian.library.widget.RImageView
+        android:id="@+id/videoIv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_4"
+        app:corner_radius="@dimen/dimen_10" />
+
+    <ImageView
+        android:id="@+id/downloadIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_main_download"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="@id/progressBar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/circleProgressBar"
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_25"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginEnd="@dimen/dimen_4"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.ruffian.library.widget.RTextView
+        android:id="@+id/videoNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_name_bg"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dimen_12"
+        android:paddingTop="@dimen/dimen_2"
+        android:paddingEnd="@dimen/dimen_12"
+        android:paddingBottom="@dimen/dimen_2"
+        android:text="二级标题标题标题"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:corner_radius_bottom_left="@dimen/dimen_10"
+        app:corner_radius_bottom_right="@dimen/dimen_10"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</com.ruffian.library.widget.RConstraintLayout>

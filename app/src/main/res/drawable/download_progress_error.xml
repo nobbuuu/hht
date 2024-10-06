@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/dimen_27" />
+            <solid android:color="@color/transparent"></solid>
+            <!--<gradient-->
+                <!--android:startColor="@color/color_progress_bg"-->
+                <!--android:centerColor="@color/color_progress_bg"-->
+                <!--android:centerY="0.75"-->
+                <!--android:endColor="@color/color_progress_bg"-->
+                <!--android:angle="270"-->
+                <!--/>-->
+        </shape>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/dimen_27" />
+                <solid android:color="@color/color_ffe3de"></solid>
+                <!--<gradient-->
+                    <!--android:startColor="@color/color_progress"-->
+                    <!--android:centerColor="@color/color_progress"-->
+                    <!--android:centerY="0.75"-->
+                    <!--android:endColor="@color/color_progress"-->
+                    <!--android:angle="270"-->
+                    <!--/>-->
+            </shape>
+        </clip>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/dimen_27" />
+                <solid android:color="@color/color_ffe3de"></solid>
+                <!--<gradient-->
+                    <!--android:startColor="@color/color_progress"-->
+                    <!--android:centerColor="@color/color_progress"-->
+                    <!--android:centerY="0.75"-->
+                    <!--android:endColor="@color/color_progress"-->
+                    <!--android:angle="270"-->
+                    <!--/>-->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

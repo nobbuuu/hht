@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_bg_vague"
+    tools:context=".ui.book2.FirstOrderActivity">
+
+    <ImageView
+        android:id="@+id/runFinSh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:src="@mipmap/ic_back" />
+
+    <RelativeLayout
+        android:id="@+id/newDownload_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:background="@mipmap/img_title">
+
+        <TextView
+            android:id="@+id/firstTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="咏鹅"
+            android:textColor="#A1580D"
+            android:textSize="@dimen/size_18"
+            android:textStyle="bold"
+            android:includeFontPadding="false" />
+    </RelativeLayout>
+    <!--背景层-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newDownload_title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:background="@mipmap/img_cube"
+        android:layout_marginLeft="@dimen/dimen_49"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginBottom="@dimen/dimen_12">
+
+        <!--最外面大层-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_45"
+            android:layout_marginRight="@dimen/dimen_60"
+            android:layout_marginBottom="@dimen/dimen_75"
+            android:orientation="horizontal">
+
+            <!--  四个小层   第一层-->
+            <RelativeLayout
+                android:id="@+id/layoutOne"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:src="@mipmap/img_sing" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:src="@mipmap/ic_sing" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/downloadImageOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:src="@mipmap/img_download" />
+            </RelativeLayout>
+            <!--  四个小层   第二层-->
+            <RelativeLayout
+                android:id="@+id/layoutTwo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:src="@mipmap/img_read" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:src="@mipmap/ic_read" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/downloadImageTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:src="@mipmap/img_download" />
+            </RelativeLayout>
+            <!--  四个小层   第三层-->
+            <RelativeLayout
+                android:id="@+id/layoutThree"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:src="@mipmap/img_story" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:src="@mipmap/ic_story" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/downloadImageThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:src="@mipmap/img_download" />
+            </RelativeLayout>
+            <!--  四个小层   第四层-->
+            <RelativeLayout
+                android:id="@+id/layoutFor"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:src="@mipmap/img_draw" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15"
+                        android:src="@mipmap/ic_draw" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/downloadImageFor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:src="@mipmap/img_download" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <!--        <com.booyue.view.xrecyclerview.HHTRecyclerView-->
+        <!--            android:id="@+id/first_but_recycleView"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_weight="1" />-->
+    </LinearLayout>
+
+</RelativeLayout>

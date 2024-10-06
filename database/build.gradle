@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+android {
+    compileSdkVersion 29
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+greendao {
+    //如果表更新 schemaVersion版本加1，创建临时表（结构与上一版本的表结构相同），将旧数据移到临时表中，删除旧版本的表，创建新版本的表，将临时表中的数据转移到新表中，最后再删除临时表
+    //
+    schemaVersion 15 //13 add searchwordbean
+    daoPackage 'com.booyue.database.greendao.gen'//
+    targetGenDir 'src/main/java'
+//    设置为true以自动生成单元测试
+//    generateTests false
+    //targetGenDirTest：设置生成单元测试目录
+    //generateTests：设置自动生成单元测试用例
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    /*greendao 在project的build.grade加入 classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1' // add plugin*/
+    api 'org.greenrobot:greendao:3.3.0'
+    api 'org.greenrobot:greendao-generator:3.3.0'
+    implementation 'io.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1'
+    implementation project(':base')
+}

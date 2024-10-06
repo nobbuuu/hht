@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mianBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_bg1">
+
+    <RelativeLayout
+        android:id="@+id/book_top_layout"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/tabs"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_84"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+<!--            <item name="android:background">@drawable/selector_tab_book</item>-->
+            <RadioButton
+                android:id="@+id/tab_recommend"
+                style="@style/Nav_Tab"
+                android:checked="true"
+                android:background="@drawable/selector_tab_book"
+                />
+            <!-- android:text="@string/nav_rank"    />-->
+
+
+            <RadioButton
+                android:id="@+id/tab_classify"
+                style="@style/Nav_Tab"
+                android:checked="false"
+                android:background="@drawable/selector_tab_two_book"/>
+
+            <RadioButton
+                android:id="@+id/tab_rank"
+                style="@style/Nav_Tab"
+                android:checked="false"
+                android:background="@drawable/selector_tab_three_book" />
+        </RadioGroup>
+
+
+        <ImageView
+            android:id="@+id/setUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_80"
+            android:src="@mipmap/ic_setting" />
+    </RelativeLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/book2viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/book_top_layout" />
+
+
+
+</RelativeLayout>

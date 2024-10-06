@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.booyue.view.xrecyclerview.HHTRecyclerView
+            android:id="@+id/hhtSwipeRecyclerViewGrade"
+            android:layout_width="@dimen/dimen_120"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_sidebar"
+            android:padding="@dimen/dimen_4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_22"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="horizontal">
+
+                <com.booyue.poetry.view.SubjectChooseView
+                    android:id="@+id/subjectChooseView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </com.booyue.poetry.view.SubjectChooseView>
+
+                <com.booyue.poetry.view.SubjectChooseView
+                    android:id="@+id/versionChooseView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20">
+
+                </com.booyue.poetry.view.SubjectChooseView>
+
+                <TextView
+                    android:id="@+id/tvDownload"
+                    android:layout_width="@dimen/dimen_94"
+                    android:layout_height="@dimen/dimen_36"
+                    android:background="@drawable/btn_downloadlist"
+                    android:layout_marginLeft="@dimen/dimen_102"
+                    />
+
+            </LinearLayout>
+
+            <com.booyue.poetry.view.HHTSwipeRecyclerView
+                android:id="@+id/hhtSwipeRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_16"
+                android:layout_marginRight="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_20"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<include layout="@layout/layout_empty_data"></include>-->
+</FrameLayout>

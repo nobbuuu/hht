@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/containerEdit"
+    android:layout_gravity="right"
+    android:visibility="gone"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvCheckAll"
+        style="@style/MainText"
+        android:text="@string/text_check_all"
+        android:visibility="visible"
+        android:layout_gravity="center_vertical"/>
+
+    <ImageButton
+        android:id="@+id/ibDelete"
+        style="@style/SubTextTiTle"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:background="@drawable/btn_del" />
+
+    <ImageButton
+        android:id="@+id/ibComplete"
+        style="@style/SubTextTiTle"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:background="@drawable/btn_finish" />
+
+</LinearLayout>

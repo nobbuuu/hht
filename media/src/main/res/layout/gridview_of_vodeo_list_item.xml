@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvSerialNum"
+            android:layout_width="@dimen/dimen_64"
+            android:layout_height="@dimen/dimen_44"
+            android:textSize="@dimen/size_13"
+            android:textColor="@color/white_color"
+            android:background="@drawable/shape_number_video_item_bg"
+            android:text="1"
+            android:gravity="center"/>
+</LinearLayout>

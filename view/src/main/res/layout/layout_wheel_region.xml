@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <com.booyue.view.wheelview.WheelView
+        android:id="@+id/wv_province"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        app:center_color="@color/wheel_center_color"
+        app:backgroud_color="@color/wheel_bg_color"
+        />
+
+    <com.booyue.view.wheelview.WheelView
+        android:id="@+id/wv_city"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen_15"
+        app:center_color="@color/wheel_center_color"
+        app:backgroud_color="@color/wheel_bg_color"/>
+
+
+</LinearLayout>

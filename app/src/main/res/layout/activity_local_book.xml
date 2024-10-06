@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_90"
+        android:background="@drawable/bg_title">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_36" />
+
+        <Button
+            android:id="@+id/btnSetDownloadPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_set_path_bg"
+            android:text="@string/button_text_download_path"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_70">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:src="@drawable/icon_mydownload" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:layout_marginRight="@dimen/dimen_20">
+            <include layout="@layout/layout_edit"></include>
+
+            <LinearLayout
+                android:id="@+id/containerNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ibEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_edit" />
+
+                <ImageButton
+                    android:id="@+id/ibDownloadList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30"
+                    android:background="@drawable/btn_downloadlist" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.booyue.poetry.view.HHTSwipeRecyclerView
+        android:id="@+id/hhtSwipeRecyclerViewLocalBook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlButton"
+        android:layout_marginTop="@dimen/dimen_13"
+        android:paddingLeft="@dimen/dimen_42"
+        android:paddingRight="@dimen/dimen_42"></com.booyue.poetry.view.HHTSwipeRecyclerView>
+
+</RelativeLayout>

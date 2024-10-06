@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_bg_vague"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/runFinSh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:src="@mipmap/ic_back" />
+
+    <RelativeLayout
+        android:id="@+id/newDownload_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:background="@mipmap/img_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="下载列表"
+            android:textColor="#A1580D"
+            android:textSize="@dimen/size_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/newDownload_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen_46"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/img_cube2"
+            android:layout_marginLeft="@dimen/dimen_27"
+            android:paddingLeft="@dimen/dimen_35">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_48"
+                android:layout_marginTop="@dimen/dimen_42"
+                android:layout_marginRight="@dimen/dimen_45"
+                android:layout_marginBottom="@dimen/dimen_40">
+
+
+                <com.booyue.view.NoScrollViewPager
+                    android:id="@+id/viewPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/deleteText"
+                    android:layout_below="@+id/seleteAll"></com.booyue.view.NoScrollViewPager>
+
+                <CheckBox
+                    android:id="@+id/seleteAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:button="@drawable/delete_selete_all_check"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:text="全选"
+                    android:textColor="#B08D69"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/seleteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:gravity="center_vertical"
+                    android:text="选择"
+                    android:textColor="#B08D69"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deleteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:drawableLeft="@mipmap/ic_delete_s"
+                    android:drawablePadding="@dimen/dimen_6"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_10"
+                    android:text="删除"
+                    android:textColor="#B08D69"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/rgCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbDownloading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:background="@drawable/selector_new_download" />
+
+                <RadioButton
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:id="@+id/rbDownloadComplete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:background="@drawable/selector_new_download_over" />
+
+            </RadioGroup>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

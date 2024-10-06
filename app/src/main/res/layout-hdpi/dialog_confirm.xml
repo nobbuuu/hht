@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/img_pop_up"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/tvTitle"
+            style="@style/MainText"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_156"
+            android:textColor="@color/text_color_new_subject_choose"
+            tools:text="@string/dialog_cancel_download_title" />
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@mipmap/btn_0" />
+
+            <ImageButton
+                android:id="@+id/ibConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30"
+                android:background="@color/transparent"
+                android:src="@mipmap/btn_1"  />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

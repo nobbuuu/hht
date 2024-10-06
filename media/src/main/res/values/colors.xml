@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!--<color name="progress_bg">#DDDDDD</color>-->
+    <color name="progress">#ff6666</color>
+    <!--<color name="progress_new">#ff6666</color>-->
+    <color name="progress_yellow">#f7b500</color>
+    <color name="progress_old">#2dc7ff</color>
+    <color name="progress_device">#FFDD45</color>
+
+    <color name="progress_second">#ccffffff</color>
+    <color name="progress_bg">#66ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color515151">#FF333333</color>
+    <color name="color_99000000">#99000000</color>
+    <color name="color_66000000">#99000000</color>
+    <color name="color_2dc7ff">#2dc7ff</color>
+    <color name="color_2dc7ff_99">#992dc7ff</color>
+    <color name="video_serial_num_bg">#bd000000</color>
+    <color name="video_serial_num_item_bg">#1fffffff</color>
+    <color name="video_serial_num_item_bg_hov">#ff6666</color>
+
+
+    <!-- 需要的颜色 -->
+    <color name="white_color">#ffffff</color>
+    <color name="classname">#6ac1ff</color>
+    <color name="hint">#a4dfff</color>
+    <color name="banner_color">#39000000</color>
+    <color name="black">#000000</color>
+    <!-- 黑色 -->
+
+</resources>

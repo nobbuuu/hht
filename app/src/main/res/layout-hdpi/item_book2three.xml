@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/dimen_30"
+    android:layout_marginRight="@dimen/dimen_30">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/shirenbg"
+        android:layout_marginLeft="@dimen/dimen_21"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_marginBottom="@dimen/dimen_38">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/three_adapter_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dimen_60"
+            android:paddingTop="@dimen/dimen_22"
+            android:paddingRight="@dimen/dimen_23" />
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/left_rela"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginBottom="@dimen/dimen_24"
+        android:background="@mipmap/img_left"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/text_RecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:layout_centerHorizontal="true"/>
+        <View
+            android:layout_width="@dimen/dimen_5"
+            android:layout_height="@dimen/dimen_1"/>
+    </LinearLayout>
+
+</RelativeLayout>

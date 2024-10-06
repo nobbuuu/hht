@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.booyue.poetry.view.BookView
+        android:id="@+id/bookView"
+        android:layout_width="@dimen/dimen_215"
+        android:layout_height="@dimen/dimen_270"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10">
+
+    </com.booyue.poetry.view.BookView>
+
+
+</FrameLayout>
+

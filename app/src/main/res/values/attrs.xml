@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FontTextView">
+        <attr name="fontType" format="enum">
+            <enum name="one" value="100" />
+            <enum name="two" value="200" />
+            <enum name="three" value="300" />
+            <enum name="forr" value="400" />
+            <enum name="five" value="500" />
+            <enum name="six" value="600" />
+            <enum name="seven" value="700" />
+        </attr>
+    </declare-styleable>
+
+</resources>

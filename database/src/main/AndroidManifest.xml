@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.booyue.database">
+
+    <!--<application-->
+        <!--android:name=".demo.ApplicationDemo"-->
+        <!--android:allowBackup="true"-->
+        <!--android:hardwareAccelerated="true"-->
+        <!--android:icon="@mipmap/ic_launcher"-->
+        <!--android:label="@string/app_name"-->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+        <!--android:roundIcon="@mipmap/ic_launcher_round"-->
+        <!--android:supportsRtl="true"-->
+        <!--android:theme="@style/CommonTheme"-->
+        <!--tools:replace="name,icon,label,theme">-->
+        <!--<activity android:name=".demo.DemoActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"></action>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"></category>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+    <!--</application>-->
+</manifest>

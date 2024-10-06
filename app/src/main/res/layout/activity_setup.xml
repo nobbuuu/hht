@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_bg_clear"
+    tools:context=".ui.book2.FirstOrderActivity">
+
+    <ImageView
+        android:id="@+id/runSetFinSh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:src="@mipmap/ic_back" />
+
+    <RelativeLayout
+        android:id="@+id/first_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/img_title"
+        android:layout_marginTop="@dimen/dimen_40">
+
+        <TextView
+            android:id="@+id/firstTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="#A1580D"
+            android:textSize="@dimen/size_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_title"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dimen_49"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginBottom="@dimen/dimen_12"
+        android:background="@mipmap/img_cube">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_75"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/startDownButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/dimen_121"
+                android:layout_marginRight="@dimen/dimen_144"
+                android:background="@mipmap/img_layout_setting">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_70"
+                    android:text="下载列表"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_20" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_55"
+                    android:src="@mipmap/ic_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/appCode"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/dimen_121"
+                android:layout_marginTop="@dimen/dimen_27"
+                android:layout_marginRight="@dimen/dimen_144"
+                android:background="@mipmap/img_layout_setting">
+
+                <TextView
+                    android:id="@+id/versionName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_70"
+                    android:text="版本1.0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_20" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_55"
+                    android:src="@mipmap/ic_next"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

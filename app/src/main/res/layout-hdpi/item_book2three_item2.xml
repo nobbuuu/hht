@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_160"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_marginLeft="@dimen/dimen_22"
+    android:layout_marginTop="@dimen/dimen_12">
+
+    <RelativeLayout
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/itemIImg"
+            android:layout_width="@dimen/dimen_143"
+            android:layout_height="@dimen/dimen_100"
+            fresco:actualImageScaleType="focusCrop"
+            app:placeholderImage="@drawable/default_image"
+            android:scaleType="fitXY"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            ></com.facebook.drawee.view.SimpleDraweeView>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="@dimen/dimen_110"
+            android:src="@mipmap/img_kuang" />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_marginTop="@dimen/dimen_15"-->
+        <!--            android:layout_marginRight="@dimen/dimen_15"-->
+        <!--            android:text="2-3岁"-->
+        <!--            android:paddingTop="@dimen/dimen_3"-->
+        <!--            android:paddingBottom="@dimen/dimen_3"-->
+        <!--            android:paddingLeft="@dimen/dimen_13"-->
+        <!--            android:paddingRight="@dimen/dimen_13"-->
+        <!--            android:gravity="center"-->
+        <!--            android:background="@drawable/sui"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:visibility="gone"-->
+        <!--            />-->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/b1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemIItext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemIIItext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_12"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="唐‘杜甫"
+                android:textSize="@dimen/size_9"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

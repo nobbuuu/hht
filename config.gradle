@@ -1,0 +1,25 @@
+ext {
+    isModule = true
+    defaultConifg = [
+            compileSdkVersion: 28,
+            minSdkVersion :19,
+            targetSdkVersion :28,
+            versionCode :100,
+            versionName :"1.1.100"
+    ]
+    pkgname= [
+            "app":"com.booyue.babylisten",
+    ]
+
+    libraryVersion = "28.0.0"
+    dependencies = [
+            "v7"   : "com.android.support:appcompat-v7:${libraryVersion}",
+            "recyclerview": "com.android.support:recyclerview-v7:${libraryVersion}",
+            "design"        : "com.android.support:design:${libraryVersion}",
+            "v4"     : "com.android.support:support-v4:${libraryVersion}",
+            "cardview" : "com.android.support:cardview-v7:${libraryVersion}",
+            "compat" : "com.android.support:support-compat:${libraryVersion}",
+            "palette" : "com.android.support:palette-v7:${libraryVersion}"
+    ]
+
+}

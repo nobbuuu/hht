@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">media</string>
+    <string name="complete">完成</string>
+    <string name="number_of_video">集数</string>
+    <string name="dialog_video_serial_number_title">选集</string>
+    <string name="error_url">播放地址错误</string>
+    <string name="error_network">网络错误</string>
+    <string name="error_network2">当前无网络，点击这里开启WIFI</string>
+</resources>

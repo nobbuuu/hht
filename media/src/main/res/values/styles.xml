@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <style name="SeekBarYellowStyle" parent="@android:style/Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/progressbar_drawable_yellow</item>
+        <item name="android:minHeight">@dimen/dimen_2</item>
+        <item name="android:maxHeight">@dimen/dimen_2</item>
+        <item name="android:thumb">@drawable/ic_thumb_yellow</item>
+        <!--<item name="android:thumbOffset">@dimen/dimen_2</item>-->
+    </style>
+
+    <style name="SeekBarStyle" parent="@android:style/Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/progressbar_drawable</item>
+        <item name="android:minHeight">@dimen/dimen_2</item>
+        <item name="android:maxHeight">@dimen/dimen_2</item>
+        <item name="android:thumb">@drawable/ic_thumb</item>
+        <!--<item name="android:thumbOffset">@dimen/dimen_2</item>-->
+    </style>
+
+
+    <style name="ProgressBarOldStyle" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_drawable_old</item>
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">@dimen/dimen_5</item>
+        <item name="android:maxHeight">@dimen/dimen_5</item>
+        <item name="android:thumb">@drawable/ic_thumb_old</item>
+        <item name="android:thumbOffset">@dimen/dimen_0</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="SeekBarOldStyle" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_drawable_old</item>
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">@dimen/dimen_6</item>
+        <item name="android:maxHeight">@dimen/dimen_6</item>
+        <item name="android:thumb">@drawable/ic_thumb_old</item>
+        <item name="android:thumbOffset">@dimen/dimen_2</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <!--exo player 官方定义-->
+    <!--<item name="exo_progress" type="id"/>-->
+    <!--<item name="exo_position" type="id"/>-->
+    <!--<item name="exo_duration" type="id"/>-->
+    <!--<item name="exo_play" type="id"/>-->
+    <!--<item name="exo_pause" type="id"/>-->
+    <!--<item name="exo_repeat_toggle" type="id"/>-->
+    <!--自定义 id-->
+    <!--<item name="booyue_exo_back" type="id"/>-->
+    <!--<item name="booyue_exo_name" type="id"/>-->
+    <!--<item name="booyue_exo_number" type="id"/>-->
+    <!--<item name="booyue_exo_prev" type="id"/>-->
+    <!--<item name="booyue_exo_next" type="id"/>-->
+
+
+
+
+</resources>

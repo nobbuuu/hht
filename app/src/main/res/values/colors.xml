@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="button_bg_set_path">#c57000</color>
+    <color name="button_bg_subject_choose">#bc6300</color>
+    <color name="text_color_subject_choose">#331b00</color>
+    <color name="text_color_new_subject_choose">#836342</color>
+    <color name="item_bg_subject_choose">#ffd4ab</color>
+    <color name="grade_unchecked_color">#f1d6c0</color>
+    <color name="color_5ca6ff">#5ca6ff</color>
+    <color name="color_b3dcff">#B3DCFF</color>
+    <color name="color_DBC7AC">#DBC7AC</color>
+    <color name="color_ff735b">#ff735b</color>
+    <color name="color_ffe3de">#FFE3DE</color>
+    <color name="color_downloaded">#b3b3b3</color>
+    <color name="color_download_bg">#7c563200</color>
+    <color name="color_d4d4d4">#d4d4d4</color>
+    <color name="color_808080">#808080</color>
+
+    <color name="color_progress">#2FC8FF</color>
+    <color name="color_progress_bg">#8AE0FF</color>
+    <color name="color_green_97B824">#97B824</color>
+    <color name="color_blue_3c3c96">#3C3C96</color>
+    <color name="color_d9">#D9D9D9</color>
+    <color name="color_name_bg">#26000000</color>
+    <color name="color_FFAB28">#FFAB28</color>
+    <color name="color_FFE1BA">#FFE1BA</color>
+</resources>

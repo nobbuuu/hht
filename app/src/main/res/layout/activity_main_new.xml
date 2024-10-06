@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_main_nature">
+
+    <ImageView
+        android:id="@+id/backIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_35"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:src="@mipmap/ic_back_new"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/setIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_24"
+        android:src="@mipmap/btn_set"
+        app:layout_constraintBottom_toBottomOf="@+id/backIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backIv" />
+
+    <RadioGroup
+        android:id="@+id/mainRag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_main_rg_bg_nature"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/backIv"
+        app:layout_constraintEnd_toStartOf="@+id/setIv"
+        app:layout_constraintStart_toEndOf="@+id/backIv"
+        app:layout_constraintTop_toTopOf="@+id/backIv">
+
+        <RadioButton
+            android:id="@+id/natureRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_main_tab"
+            android:button="@null"
+            android:checked="true"
+            android:paddingStart="@dimen/dimen_25"
+            android:paddingTop="@dimen/dimen_7"
+            android:paddingEnd="@dimen/dimen_25"
+            android:paddingBottom="@dimen/dimen_7"
+            android:text="自然百科"
+            android:textColor="@color/color_green_97B824"
+            android:textSize="@dimen/size_21"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/scienceRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_main_tab"
+            android:button="@null"
+            android:paddingStart="@dimen/dimen_25"
+            android:paddingTop="@dimen/dimen_7"
+            android:paddingEnd="@dimen/dimen_25"
+            android:paddingBottom="@dimen/dimen_7"
+            android:text="人类宇宙百科"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_21"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/mainVp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backIv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_24"
+            android:text="@string/dialog_video_serial_number_title"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/size_17"
+            />
+
+        <GridView
+            android:id="@+id/gvSeraiNum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:numColumns="4"
+            android:verticalSpacing="@dimen/dimen_4"
+            tools:listitem="@layout/gridview_of_vodeo_list_item">
+
+        </GridView>
+
+    </LinearLayout>
+</LinearLayout>

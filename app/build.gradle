@@ -1,0 +1,132 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.booyue.poetry"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1   //正式150  测试150—
+        versionName "1.0"  //1.0.1.1         正式2.1.1
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+        manifestPlaceholders = [
+                UMENG_APPKEY: "5f1a93b2b4fa6023ce198c46"
+        ]
+    }
+    signingConfigs {
+        release {
+            storeFile file(KEY_PATH)
+            storePassword KEY_PASS
+            keyAlias ALIAS_NAME
+            keyPassword ALIAS_PASS
+            v2SigningEnabled false
+        }
+        debug {
+            storeFile file(KEY_PATH)
+            storePassword KEY_PASS
+            keyAlias ALIAS_NAME
+            keyPassword ALIAS_PASS
+            v2SigningEnabled false
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    //多渠道种类，只是一个示例
+    productFlavors {
+        //小天才
+        T5S {
+            //AndroidManifest.xml中定义的meta-data标签,需要和meta-data中的android:value="${CHANNEL}对应
+            manifestPlaceholders = [CHANNEL: "T5S"]
+            //Build中生成一个字符用来区分不同渠道的不同策略实现
+            buildConfigField "String", "CHANNEL", "\"T5S\""
+        }
+    }
+    //重命名apk文件
+    def String apkName = defaultConfig.versionName + "_" + defaultConfig.versionCode as String
+
+    applicationVariants.all { variant ->
+        if (variant.buildType.name.equals('release') || variant.buildType.name.equals('debug')) {
+            variant.outputs.all { output ->
+                def appName = 'primary_course'
+//                def oldFile = output.outputFile
+                def buildName = ''
+                variant.productFlavors.each { product ->
+                    //循环取到的是productFlavors的每个名字，也是区分名字的关键
+                    buildName = product.name
+                }
+                def releaseApkName = appName + "_${buildName}" + "_${apkName}.apk"
+                outputFileName = releaseApkName
+            }
+        }
+    }
+
+//    //重命名apk文件
+//    def String apkName = defaultConfig.versionName + "_" + defaultConfig.versionCode as String
+//
+//    applicationVariants.all { variant ->
+//        if (variant.buildType.name.equals('release') || variant.buildType.name.equals('debug')) {
+//            variant.outputs.all { output ->
+//                def appName = 'VideoChat_Alilo'
+//                def buildName = ''
+//                variant.productFlavors.each { product ->
+//                    //循环取到的是productFlavors的每个名字，也是区分名字的关键
+//                    buildName = product.name
+//                }
+//                def releaseApkName = appName + "_" + buildName + "_${apkName}.apk"
+//                outputFileName = releaseApkName
+//            }
+//        }
+//    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.3.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //解决方法大于65535问题
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation project(':database')
+    implementation project(':net')
+    implementation project(':base')
+    implementation project(':view')
+    implementation project(':media')
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    // 友盟统计SDK
+    implementation 'com.umeng.umsdk:common:2.2.5' // (必选)
+//    implementation 'com.umeng.umsdk:asms:1.1.3' // asms包依赖(必选)
+    implementation 'com.umeng.umsdk:crash:0.0.4' // native crash包依赖(必选)
+    // 下面各SDK根据宿主App是否使用相关业务按需引入。
+// 友盟统计SDK
+    implementation "com.umeng.umsdk:analytics:8.1.6"
+
+    //升级APK
+    implementation 'com.azhon:appupdateX:3.0.3'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
+    api 'com.facebook.fresco:fresco:0.7.0+'
+
+    //沉浸式状态栏 https://github.com/gyf-dev/ImmersionBar
+    implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
+    implementation 'com.blankj:utilcodex:1.30.4'
+    implementation 'com.ruffian.library:RWidgetHelper-AndroidX:0.0.6'
+}

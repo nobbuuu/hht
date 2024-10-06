@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">base</string>
+    <string name="error_check_network">请检查网络</string>
+    <string name="error_check_network2">当前无网络，点击这里开启WIFI</string>
+    <string name="download_toast">资源正在下载中，请前往下载列表查看进度</string>
+    <string name="expiry">登录信息已过期，请重新登录哦!</string>
+    <string name="about_version">版本号 ：1.0</string>
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="CommonTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowBackground">@color/main_color</item>
+    </style>
+
+    <style name="ColorTranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowBackground">@color/main_color</item>
+    </style>
+
+  <!--<style name="ImageTranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowTranslucentNavigation">false</item>-->
+        <!--<item name="android:windowBackground">@color/white</item>-->
+    <!--</style>-->
+    <!--<style name="ColorTranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="android:windowTranslucentStatus">false</item>-->
+        <!--<item name="android:windowTranslucentNavigation">false</item>-->
+        <!--<item name="android:windowBackground">@color/white</item>-->
+    <!--</style>-->
+
+
+</resources>
